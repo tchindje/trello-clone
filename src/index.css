@@ -1,27 +1,18 @@
-
 /*
   Here we put the css we want to be applied globally in our app
 
   */
 
-
-
 /* 
     This directive tells the browser to include padding and
     border elements in its width and height calculations.
 */
-html {
-  box-sizing: border-box;
-}
 
 html,
 body,
 #root {
+  margin-top: 3px;
   height: 100%; /* html and body element take a whole of height   */
-}
-
-*,
-*:hover,
-*::after {
-  box-sizing: inherit;
+  background-color: #3179ba;
+  width: 100%;  
 }

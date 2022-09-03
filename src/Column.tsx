@@ -2,7 +2,6 @@
 import { ColumnContainerStyle, ColumnTitleStyle } from "./styles";
 
 //importr Card component to pass it as child to comlumn component
-import { Card } from "./Card";
 
 import { FC } from "react";
 

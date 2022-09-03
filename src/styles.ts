@@ -15,7 +15,7 @@ export const AppContainerStyle = styled.div`
     flex-direction : row;
     background-color : #3179ba;
     height : 100%,
-    padding : 20 px;
+    padding : 20px;
     width : 100%
 `;
 
@@ -47,7 +47,8 @@ export const ColumnTitleStyle = styled.div`
 export const CardContainerStyle = styled.div`
   background-color: #fff;
   cursor: pointer;
-  margin-bottom: 0.5 rem;
+  margin-bottom: 0.5rem;
+  padding : 5px 10px
   max-width: 300px;
   border-radius: 3px;
   box-shadow: #091e4240 0px 1px 0px 0px;
@@ -65,48 +66,46 @@ export const AddNewItemButtonStyle = styled.button<AddItemButtonProps>`
   background-color: #ffffff3d;
   border-radius: 3px;
   border: none;
-  color: ${(props) => (props.dark ? "#0000" : "#fff")};
+  color: ${(props) => (props.dark ? "#000" : "#fff")};
   cursor: pointer;
   max-width: 300px;
   padding: 10px 10px;
-  text-align: center;
+  text-align: left;
   transition: background 85ms ease-in;
   width: 100%;
-
-  &: hover {
+  &:hover {
     background-color: #ffffff52;
   }
 `;
 
-
-// style for our form component. 
+// style for our form component.
 export const NewItemFormContainerStyle = styled.div`
-  max-width : 300px;
-  display : flex;
-  flex-direction : column;
-  width : 100%;
-  align-item : flex-start;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-item: flex-start;
 `;
 
 //style for button component inside the NewItemFormcontainer
 //We want our button to be green and have nice rounded corners.
 export const NewItemButtonStyle = styled.button`
-  background-color : #5aac44;
-  border-radius : 3px;
-  border : none;
-  box-shadow : none;
-  color : #fff;
-  padding : 6px 12px;
-  text-align : center;
+  background-color: #5aac44;
+  border-radius: 3px;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  padding: 6px 12px;
+  width: 100px;
+  text-align: center;
 `;
-
 
 //style for input component inside the NewItemFormcontainer
 export const NewItemInputStyle = styled.input`
-  border-radius : 3px;
-  border : none;
-  box-shadow :  #091e4240 0px 1px 0px 0px;  //bue
-  margin-bottom : 0.5rem;
-  padding : 0.5rem 1rem;
-  width : 100%;
+  border-radius: 3px;
+  border: none;
+  box-shadow: #091e4240 0px 1px 0px 0px;
+  margin-bottom: 0.5rem;
+  padding: 0.5em 1rem;
+  width: auto;
 `;
